@@ -1,26 +1,39 @@
 # AI Career Paths: minimal steps
 
+[![Link check](https://github.com/TomYang1993/AI-career-path-minimal-steps/actions/workflows/link-check.yml/badge.svg)](https://github.com/TomYang1993/AI-career-path-minimal-steps/actions/workflows/link-check.yml) [![License: CC BY 4.0](https://img.shields.io/badge/license-CC%20BY%204.0-lightgrey.svg)](LICENSE)
+
 The shortest route into four AI engineering roles. Each role has a few steps. Each step contains courses and projects for hands on practice. 
+
+[![The interactive map cycling through all roles and each of the four paths](assets/map.gif)](https://tomyang1993.github.io/ai-career-paths/)
+
+| Role | Steps | Rough total time | Capstone |
+|---|---|---|---|
+| [AI engineer](#ai-engineer) | 5 + capstone, 15 skills | 400–550 h, 9–13 months | Ops agent with MCP tools and cited retrieval, backed by a 50-case eval suite |
+| [Cloud / ML platform engineer](#cloud--ml-platform-engineer) | 5 + capstone, 13 skills | 700–950 h, 16–22 months | vLLM on Kubernetes, autoscaled on queue depth, benchmarked on latency and cost |
+| [DevOps / full-stack engineer](#devops--full-stack-engineer) | 4 + capstone, 11 skills | 500–650 h, 12–15 months | A streaming AI feature with evals as a CI merge gate, preview deploys and rollback |
+| [ML trainer / researcher](#ml-trainer--researcher) | 5 + capstone, 10 skills | 500–650 h, 12–15 months | Pretrain a small language model, then SFT and RL-tune it and report the gains |
+
+<sub>Time is a rough estimate: every project plus the course parts you need, starting from basic programming, at about 10 hours a week. Already working as a software engineer? Step 1 shrinks from 100–170 hours to a few weeks of review.</sub>
 
 For more sophisticated career path map with more resource, check out: https://tomyang1993.github.io/ai-career-paths/
 
-The role research borrowed inspiratinos from https://github.com/alexeygrigorev/ai-engineering-field-guide.
+The role research borrowed inspiration from https://github.com/alexeygrigorev/ai-engineering-field-guide.
 
-Agent Builder and RAG app builder is combined into AI product engineer following recent trend.
+Agent Builder and RAG app builder are combined into AI engineer following recent trend.
 
 The AI field is changing everyday. The career path is subject to change.
 
-## The four roles(super simplified JD, pick one to follow the steps)
+## The four roles (super simplified JD, pick one to follow the steps)
 
 - [AI engineer](#ai-engineer): ships LLM systems that take actions and answer from real data: tool-calling agents, retrieval pipelines with citations, and the evals that keep both honest.
 - [Cloud / ML platform engineer](#cloud--ml-platform-engineer): runs the infrastructure that models train and serve on: GPU clusters, model gateways, autoscaling inference, pipelines and cost controls.
 - [DevOps / full-stack engineer](#devops--full-stack-engineer): builds and ships the product around the model: frontends, APIs, pipelines and deploys, increasingly with coding agents in the loop.
 - [ML trainer / researcher](#ml-trainer--researcher): trains, fine-tunes and evaluates models: pretraining runs, post-training with SFT and RL, and the systems work that makes them fast.
 
-Now only free resource are included, paid resources might be listed later, but absolutely no affliation.
+Now only free resources are included, paid resources might be listed later, but absolutely no affiliation.
 Steps have overlappings between these roles naturally, check out https://tomyang1993.github.io/ai-career-paths/ for a big picture.
-Only part of the resources are listed below for simplicity, again check out https://tomyang1993.github.io/ai-career-paths/ for more details if you want to do it throughly.
-Choosing multiple paths at the same time is not recomended, the skillsets required are quite different.
+Only part of the resources are listed below for simplicity, again check out https://tomyang1993.github.io/ai-career-paths/ for more details if you want to do it thoroughly.
+Choosing multiple paths at the same time is not recommended, the skillsets required are quite different.
 
 ## AI engineer
 
@@ -391,3 +404,13 @@ Follow along:
 
 - Role archetypes start from the job-posting clusters in the [AI Engineering Field Guide](https://github.com/alexeygrigorev/ai-engineering-field-guide). Its agent-builder and RAG-builder clusters are merged here into one AI engineer role, because most postings that ask for one also ask for the other.
 - Courses and projects were checked against their live pages in November 2026. Whether lecture videos are public changes from term to term; each course says what was open then (videos, slides, notes).
+
+## Contributing
+
+- Know a better free course or project for a step? [Suggest a resource](https://github.com/TomYang1993/AI-career-path-minimal-steps/issues/new?template=suggest-resource.yml).
+- Found a broken link? [Report a dead link](https://github.com/TomYang1993/AI-career-path-minimal-steps/issues/new?template=dead-link.yml). A link check also runs on every change and every Monday, and opens an issue when it finds one.
+- To hear when a path changes, use Watch → Custom → Releases. Every [changelog](CHANGELOG.md) entry is published as a release.
+
+## License
+
+The text in this repo is licensed under [CC BY 4.0](LICENSE): you can share and adapt it, including commercially, as long as you credit "AI Career Paths: minimal steps" by Tom Yang and link back here. The courses and projects it links to belong to their authors and keep their own licenses.

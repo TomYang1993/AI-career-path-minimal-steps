@@ -1,0 +1,22 @@
+name: Publish changelog releases
+
+# Every new CHANGELOG.md entry becomes a GitHub Release, so people who
+# Watch -> Custom -> Releases get notified when a path changes.
+on:
+  push:
+    branches: [main]
+    paths: [CHANGELOG.md]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - name: Publish entries that have no release yet
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 .github/scripts/changelog_releases.py

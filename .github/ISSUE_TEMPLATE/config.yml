@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Interactive AI career path map
+    url: https://tomyang1993.github.io/ai-career-paths/
+    about: Every option for every skill, plus papers and tools, as an interactive graph.

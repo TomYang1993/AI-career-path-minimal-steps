@@ -1,0 +1,13 @@
+# Settings for the link check (https://lychee.cli.rs), used by .github/workflows/link-check.yml.
+
+max_retries = 3
+retry_wait_time = 5
+timeout = 30
+max_concurrency = 8
+
+# Some course sites refuse automated requests (403) or rate-limit them (429) while working
+# fine in a browser. Count those as reachable, so the check fails only on links that are
+# really gone: 404, 410, DNS errors and timeouts.
+accept = ["200..=299", "403", "429"]
+
+user_agent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0 Safari/537.36"

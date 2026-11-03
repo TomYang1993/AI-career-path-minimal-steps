@@ -2,8 +2,11 @@
 
 Changes to the steps in [README.md](README.md), newest first. Course and project links are re-checked against their live pages when a change lands; the date says when.
 
-## 2026-11-03 · capstone follow-alongs
+Each entry is published as a [GitHub Release](https://github.com/TomYang1993/AI-career-path-minimal-steps/releases) when it lands on `main`: start it with `## YYYY-MM-DD · short title`.
 
+## 2026-11-03 · capstone follow-alongs and overview
+
+- A table at the top sums up each role: number of steps and skills, a rough total time, and the capstone.
 - Each capstone now lists free, end-to-end builds to follow: Decoding AI's Second Brain AI Assistant course (AI engineer), the vLLM Production Stack tutorials (platform), the AI Dev Tools Zoomcamp with Vercel's AI SDK RAG template and the promptfoo GitHub Action (DevOps / full-stack), and nanochat with Reasoning from Scratch (researcher). Where running them costs money (API calls, GPU time), the line says roughly how much.
 - nanochat's run time updated to match its README: about 2 hours on one 8×H100 node, around $50.
 

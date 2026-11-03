@@ -1,0 +1,39 @@
+name: Report a dead link
+description: A link is broken, has moved, or is now behind a paywall or login.
+title: "[Dead link] "
+labels: ["dead link"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Broken link
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where it appears
+      description: Role and step number from the README.
+      placeholder: "ML trainer / researcher, step 4.2"
+  - type: dropdown
+    id: what
+    attributes:
+      label: What happens
+      options:
+        - Page not found (404)
+        - Moved to a new address
+        - Now paid, or behind a login
+        - Content changed and no longer fits the step
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: replacement
+    attributes:
+      label: Replacement link, if you know one
+      placeholder: https://
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else

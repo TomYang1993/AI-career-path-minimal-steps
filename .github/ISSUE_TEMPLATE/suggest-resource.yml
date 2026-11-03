@@ -1,0 +1,74 @@
+name: Suggest a resource
+description: Propose a free course, project or capstone follow-along for one of the steps.
+title: "[Resource] "
+labels: ["resource suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep the paths useful. Only free resources are listed for now, and nothing here is sponsored.
+  - type: input
+    id: url
+    attributes:
+      label: Link
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Name and author
+      placeholder: "Stanford CS336: Language Modeling from Scratch"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type
+      options:
+        - Course
+        - Project
+        - Capstone follow-along
+    validations:
+      required: true
+  - type: dropdown
+    id: roles
+    attributes:
+      label: Role
+      multiple: true
+      options:
+        - AI engineer
+        - Cloud / ML platform engineer
+        - DevOps / full-stack engineer
+        - ML trainer / researcher
+    validations:
+      required: true
+  - type: input
+    id: step
+    attributes:
+      label: Step and skill
+      description: Use the numbers from the README.
+      placeholder: "3.6 Embeddings & chunking"
+  - type: dropdown
+    id: replace
+    attributes:
+      label: Add or replace?
+      options:
+        - Add next to the current pick
+        - Replace the current pick
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it belongs here
+      description: What it teaches, roughly how long it takes, and how it compares with what is listed now.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: It is free to use. Any cost for API calls or GPU time is mentioned above.
+          required: true
+        - label: If I made or sell this resource, I said so above.
+          required: true

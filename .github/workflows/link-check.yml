@@ -1,0 +1,42 @@
+name: Link check
+
+on:
+  push:
+    branches: [main]
+    paths: ["**.md", "lychee.toml", ".github/workflows/link-check.yml"]
+  pull_request:
+    paths: ["**.md", "lychee.toml", ".github/workflows/link-check.yml"]
+  schedule:
+    - cron: "17 6 * * 1" # Mondays, 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+
+      - name: Check links
+        uses: lycheeverse/lychee-action@v2.9.0
+        with:
+          args: --config lychee.toml --no-progress README.md CHANGELOG.md
+          output: lychee/out.md
+          fail: true
+
+      # A failed weekly run opens an issue (or adds to the open one) so dead links get fixed.
+      - name: Report dead links found by the weekly run
+        if: failure() && github.event_name == 'schedule'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Dead links found by the weekly link check"
+          open=$(gh issue list --state open --label "dead link" --search "\"$title\" in:title" --json number --jq '.[0].number // empty')
+          if [ -n "$open" ]; then
+            gh issue comment "$open" --body-file lychee/out.md
+          else
+            gh issue create --title "$title" --label "dead link" --body-file lychee/out.md
+          fi
