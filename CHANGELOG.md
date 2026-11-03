@@ -2,7 +2,12 @@
 
 Changes to the steps in [README.md](README.md), newest first. Course and project links are re-checked against their live pages when a change lands; the date says when.
 
-## 2026-11-03
+## 2026-11-03 · capstone follow-alongs
+
+- Each capstone now lists free, end-to-end builds to follow: Decoding AI's Second Brain AI Assistant course (AI engineer), the vLLM Production Stack tutorials (platform), the AI Dev Tools Zoomcamp with Vercel's AI SDK RAG template and the promptfoo GitHub Action (DevOps / full-stack), and nanochat with Reasoning from Scratch (researcher). Where running them costs money (API calls, GPU time), the line says roughly how much.
+- nanochat's run time updated to match its README: about 2 hours on one 8×H100 node, around $50.
+
+## 2026-11-03 · first version
 
 First version: the minimal steps for four AI roles, as plain text and links.
 

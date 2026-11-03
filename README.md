@@ -121,6 +121,10 @@ Most postings for this role ask for both agents and retrieval, so the path cover
 
 **Grounded ops agent capstone.** Build an operations agent over three or more real tools (tickets, docs, chat) using MCP and a sandbox, plus a hybrid-search retrieval tool with a reranker over a messy real corpus. Back it with a 50-case eval suite covering task success, recall@k and citation accuracy, and report which change moved each number.
 
+Follow along:
+
+- [Second Brain AI Assistant course](https://github.com/decodingml/second-brain-ai-assistant-course) (Decoding AI, free and open source). Six modules that build an agentic RAG assistant end to end: crawl and clean documents, chunk and embed them into a vector store, put a smolagents agent on top, evaluate it with Opik, and deploy it. Running the code costs about $1–5 in API fees. To finish the capstone, swap in your own corpus and add your ticket and chat tools as MCP servers.
+
 ---
 
 ## Cloud / ML platform engineer
@@ -212,6 +216,10 @@ Defining stack: Multi-cloud, PyTorch / TensorFlow, Kubernetes, Inference / servi
 
 **Serving platform capstone.** Serve an open-weights model with vLLM on Kubernetes with a GPU node pool, autoscale on queue depth, and publish a latency, throughput and cost-per-million-tokens benchmark.
 
+Follow along:
+
+- [vLLM Production Stack tutorials](https://github.com/vllm-project/production-stack/tree/main/tutorials) (free, open source). Follow them in order: 00 (set up Kubernetes), 01 (Helm install), 02 (basic config), 07 (benchmark on one GPU), then 20 (autoscale with KEDA on queue length, down to zero). That covers the capstone except the cost write-up. The autoscaling step needs a cluster with at least 2 GPUs; GPU time is the only cost.
+
 ---
 
 ## DevOps / full-stack engineer
@@ -291,6 +299,12 @@ Defining stack: CI/CD, Kubernetes, React / frontend. Interactive path: https://t
 
 **Full product capstone.** Ship a streaming AI feature end to end (Next.js UI, API, model provider) with evals as a CI merge gate, preview deploys and a tested rollback path.
 
+Follow along:
+
+- [AI Dev Tools Zoomcamp](https://github.com/DataTalksClub/ai-dev-tools-zoomcamp) (DataTalks.Club, free). Modules 2–4 build one full-stack app and take it through tests, Docker, a public deploy, GitHub Actions CI/CD and observability. The [final project](https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/tree/main/project) asks for CI/CD with a rollback path. The 2026 materials are still being finalized.
+- [AI SDK RAG template](https://github.com/vercel-labs/ai-sdk-preview-rag) (Vercel, free). A Next.js chat app that streams model responses and retrieves from Postgres through tool calls. Use it as the AI feature; deployed on Vercel, every pull request gets a preview deploy.
+- [promptfoo GitHub Action](https://github.com/promptfoo/promptfoo-action) (free, open source). Runs your eval suite on every pull request and fails the check below a pass rate (`fail-on-threshold`). Make that check required and evals become the merge gate. Model API calls are the only cost.
+
 ---
 
 ## ML trainer / researcher
@@ -342,7 +356,7 @@ Defining stack: PyTorch / TensorFlow, Inference / serving. Interactive path: htt
 **4.2 Language models from scratch**. From tokenizer to training run: build and scale an LM.
 
 - Course: [Stanford CS336: Language Modeling from Scratch](https://cs336.stanford.edu/) (Spring 2026, videos). Tokenizer, transformer, FlashAttention in Triton, scaling laws, data and alignment. Five heavy assignments.
-- Project: [nanochat](https://github.com/karpathy/nanochat). Tokenizer, pretraining, SFT, evaluation and a chat web UI in one small repo: your own ChatGPT clone. Time: about 4 hours on 8×H100 (~$100).
+- Project: [nanochat](https://github.com/karpathy/nanochat). Tokenizer, pretraining, SFT, evaluation and a chat web UI in one small repo: your own ChatGPT clone. Time: about 2 hours on one 8×H100 node (around $50, less on spot instances).
 
 ### Step 5 · Specialization
 
@@ -365,6 +379,11 @@ Defining stack: PyTorch / TensorFlow, Inference / serving. Interactive path: htt
 ### Step 6 · Capstone
 
 **Train-and-tune capstone.** Pretrain a small language model from scratch in the CS336 style, then SFT and RL-tune it on one narrow task. Report scaling curves and eval deltas against the base model.
+
+Follow along:
+
+- [nanochat](https://github.com/karpathy/nanochat) (Karpathy, free, open source). `runs/speedrun.sh` trains a tokenizer, pretrains a small model, fine-tunes it into a chat model and evaluates each stage; `scripts/chat_rl.py` adds RL on GSM8K math. About 2 hours on one 8×H100 node (around $50, closer to $15 on spot instances). `runs/runcpu.sh` runs a much smaller version on a laptop for free, with weak results.
+- [Reasoning from Scratch](https://github.com/rasbt/reasoning-from-scratch) (Sebastian Raschka, code free; the book is paid). Chapters 6–7 train a small model with GRPO reinforcement learning on consumer hardware: a free way to do the RL half.
 
 ---
 
