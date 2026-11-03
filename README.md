@@ -36,6 +36,8 @@ Ships LLM systems that take actions and answer from real data: tool-calling agen
 
 Defining stack: Agents, RAG, Prompt engineering, Vector databases, LangChain / LangGraph. Interactive path: https://tomyang1993.github.io/ai-career-paths/#ai
 
+Every course, project and paper for this path, on one page: [AI engineer path: skills, free courses and projects](https://tomyang1993.github.io/ai-career-paths/ai-engineer/)
+
 Most postings for this role ask for both agents and retrieval, so the path covers both. From step 3 on, skills marked *(agents)* or *(retrieval)* belong to one branch; do both.
 
 [![The AI engineer path on the interactive map: every skill box from foundations to the role](assets/path-ai-engineer.png)](https://tomyang1993.github.io/ai-career-paths/#ai)
@@ -143,6 +145,8 @@ Runs the infrastructure that models train and serve on: GPU clusters, model gate
 
 Defining stack: Multi-cloud, PyTorch / TensorFlow, Kubernetes, Inference / serving. Interactive path: https://tomyang1993.github.io/ai-career-paths/#platform
 
+Every course, project and paper for this path, on one page: [Cloud / ML platform engineer path: skills, free courses and projects](https://tomyang1993.github.io/ai-career-paths/cloud-ml-platform-engineer/)
+
 [![The Cloud / ML platform engineer path on the interactive map: every skill box from foundations to the role](assets/path-cloud-ml-platform-engineer.png)](https://tomyang1993.github.io/ai-career-paths/#platform)
 
 ### Step 1 · Foundations
@@ -240,6 +244,8 @@ Builds and ships the product around the model: frontends, APIs, pipelines and de
 
 Defining stack: CI/CD, Kubernetes, React / frontend. Interactive path: https://tomyang1993.github.io/ai-career-paths/#devops
 
+Every course, project and paper for this path, on one page: [DevOps / full-stack engineer path: skills, free courses and projects](https://tomyang1993.github.io/ai-career-paths/devops-full-stack-engineer/)
+
 [![The DevOps / full-stack engineer path on the interactive map: every skill box from foundations to the role](assets/path-devops-full-stack-engineer.png)](https://tomyang1993.github.io/ai-career-paths/#devops)
 
 ### Step 1 · Foundations
@@ -326,6 +332,8 @@ Follow along:
 Trains, fine-tunes and evaluates models: pretraining runs, post-training with SFT and RL, and the systems work that makes them fast.
 
 Defining stack: PyTorch / TensorFlow, Inference / serving. Interactive path: https://tomyang1993.github.io/ai-career-paths/#research
+
+Every course, project and paper for this path, on one page: [ML trainer / researcher path: skills, free courses and projects](https://tomyang1993.github.io/ai-career-paths/ml-trainer-researcher/)
 
 [![The ML trainer / researcher path on the interactive map: every skill box from foundations to the role](assets/path-ml-trainer-researcher.png)](https://tomyang1993.github.io/ai-career-paths/#research)
 
