@@ -14,7 +14,7 @@ Agent Builder and RAG app builder are combined into AI engineer following recent
 
 Now only **free** resources are included, **paid resources might be listed later**, but absolutely no affiliation.
 
-Steps have **overlappings** between these roles naturally, check out https://tomyang1993.github.io/ai-career-paths/ for a big picture.
+Steps naturally **overlap** between these roles. Check out https://tomyang1993.github.io/ai-career-paths/ for the big picture.
 
 **Only part of the resources** are listed below for simplicity, again check out https://tomyang1993.github.io/ai-career-paths/ for more details if you want to do it thoroughly.
 
