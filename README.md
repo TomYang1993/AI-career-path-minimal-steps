@@ -4,16 +4,7 @@
 
 The shortest route into four AI engineering roles. Each role has a few steps. Each step contains courses and projects for hands on practice. 
 
-[![The interactive map cycling through all roles and each of the four paths](assets/map.gif)](https://tomyang1993.github.io/ai-career-paths/)
-
-| Role | Steps | Rough total time | Capstone |
-|---|---|---|---|
-| [AI engineer](#ai-engineer) | 5 + capstone, 15 skills | 400–550 h, 9–13 months | Ops agent with MCP tools and cited retrieval, backed by a 50-case eval suite |
-| [Cloud / ML platform engineer](#cloud--ml-platform-engineer) | 5 + capstone, 13 skills | 700–950 h, 16–22 months | vLLM on Kubernetes, autoscaled on queue depth, benchmarked on latency and cost |
-| [DevOps / full-stack engineer](#devops--full-stack-engineer) | 4 + capstone, 11 skills | 500–650 h, 12–15 months | A streaming AI feature with evals as a CI merge gate, preview deploys and rollback |
-| [ML trainer / researcher](#ml-trainer--researcher) | 5 + capstone, 10 skills | 500–650 h, 12–15 months | Pretrain a small language model, then SFT and RL-tune it and report the gains |
-
-<sub>Time is a rough estimate: every project plus the course parts you need, starting from basic programming, at about 10 hours a week. Already working as a software engineer? Step 1 shrinks from 100–170 hours to a few weeks of review.</sub>
+[![The AI Career Path Map: all four roles on one skill graph, from foundations to the role](assets/map-all-roles.png)](https://tomyang1993.github.io/ai-career-paths/)
 
 For more sophisticated career path map with more resource, check out: https://tomyang1993.github.io/ai-career-paths/
 
@@ -42,6 +33,8 @@ Ships LLM systems that take actions and answer from real data: tool-calling agen
 Defining stack: Agents, RAG, Prompt engineering, Vector databases, LangChain / LangGraph. Interactive path: https://tomyang1993.github.io/ai-career-paths/#ai
 
 Most postings for this role ask for both agents and retrieval, so the path covers both. From step 3 on, skills marked *(agents)* or *(retrieval)* belong to one branch; do both.
+
+[![The AI engineer path on the interactive map: every skill box from foundations to the role](assets/path-ai-engineer.png)](https://tomyang1993.github.io/ai-career-paths/#ai)
 
 ### Step 1 · Foundations
 
@@ -146,6 +139,8 @@ Runs the infrastructure that models train and serve on: GPU clusters, model gate
 
 Defining stack: Multi-cloud, PyTorch / TensorFlow, Kubernetes, Inference / serving. Interactive path: https://tomyang1993.github.io/ai-career-paths/#platform
 
+[![The Cloud / ML platform engineer path on the interactive map: every skill box from foundations to the role](assets/path-cloud-ml-platform-engineer.png)](https://tomyang1993.github.io/ai-career-paths/#platform)
+
 ### Step 1 · Foundations
 
 **1.1 Python & engineering craft**. Async, type hints, tests and Git as daily habits.
@@ -241,6 +236,8 @@ Builds and ships the product around the model: frontends, APIs, pipelines and de
 
 Defining stack: CI/CD, Kubernetes, React / frontend. Interactive path: https://tomyang1993.github.io/ai-career-paths/#devops
 
+[![The DevOps / full-stack engineer path on the interactive map: every skill box from foundations to the role](assets/path-devops-full-stack-engineer.png)](https://tomyang1993.github.io/ai-career-paths/#devops)
+
 ### Step 1 · Foundations
 
 **1.1 Python & engineering craft**. Async, type hints, tests and Git as daily habits.
@@ -325,6 +322,8 @@ Follow along:
 Trains, fine-tunes and evaluates models: pretraining runs, post-training with SFT and RL, and the systems work that makes them fast.
 
 Defining stack: PyTorch / TensorFlow, Inference / serving. Interactive path: https://tomyang1993.github.io/ai-career-paths/#research
+
+[![The ML trainer / researcher path on the interactive map: every skill box from foundations to the role](assets/path-ml-trainer-researcher.png)](https://tomyang1993.github.io/ai-career-paths/#research)
 
 ### Step 1 · Foundations
 
