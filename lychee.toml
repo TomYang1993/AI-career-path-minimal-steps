@@ -10,4 +10,9 @@ max_concurrency = 8
 # really gone: 404, 410, DNS errors and timeouts.
 accept = ["200..=299", "403", "429"]
 
+# web.stanford.edu sends an incomplete certificate chain: browsers repair it, the checker
+# cannot, so its pages fail with "certificate not trusted" while working fine. Skip that one
+# host (CS224N, CS276) and check them by hand when the changelog says links were re-checked.
+exclude = ['^https://web\.stanford\.edu/']
+
 user_agent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0 Safari/537.36"
