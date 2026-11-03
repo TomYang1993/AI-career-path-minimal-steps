@@ -6,13 +6,21 @@ The shortest route into four AI engineering roles. Each role has a few steps. Ea
 
 [![The AI Career Path Map: all four roles on one skill graph, from foundations to the role](assets/map-all-roles.png)](https://tomyang1993.github.io/ai-career-paths/)
 
-For more sophisticated career path map with more resource, check out: https://tomyang1993.github.io/ai-career-paths/
+**For more sophisticated career path map with more resource, check out: https://tomyang1993.github.io/ai-career-paths/**
 
 The role research borrowed inspiration from https://github.com/alexeygrigorev/ai-engineering-field-guide.
 
 Agent Builder and RAG app builder are combined into AI engineer following recent trend.
 
-The AI field is changing everyday. The career path is subject to change.
+Now only **free** resources are included, **paid resources might be listed later**, but absolutely no affiliation.
+
+Steps have **overlappings** between these roles naturally, check out https://tomyang1993.github.io/ai-career-paths/ for a big picture.
+
+**Only part of the resources** are listed below for simplicity, again check out https://tomyang1993.github.io/ai-career-paths/ for more details if you want to do it thoroughly.
+
+**Choosing multiple paths at the same time is not recommended**, the skillsets required are quite different.
+
+**The AI field is changing everyday. The career path is subject to change**.
 
 ## The four roles (super simplified JD, pick one to follow the steps)
 
@@ -21,10 +29,6 @@ The AI field is changing everyday. The career path is subject to change.
 - [DevOps / full-stack engineer](#devops--full-stack-engineer): builds and ships the product around the model: frontends, APIs, pipelines and deploys, increasingly with coding agents in the loop.
 - [ML trainer / researcher](#ml-trainer--researcher): trains, fine-tunes and evaluates models: pretraining runs, post-training with SFT and RL, and the systems work that makes them fast.
 
-Now only free resources are included, paid resources might be listed later, but absolutely no affiliation.
-Steps have overlappings between these roles naturally, check out https://tomyang1993.github.io/ai-career-paths/ for a big picture.
-Only part of the resources are listed below for simplicity, again check out https://tomyang1993.github.io/ai-career-paths/ for more details if you want to do it thoroughly.
-Choosing multiple paths at the same time is not recommended, the skillsets required are quite different.
 
 ## AI engineer
 
