@@ -1,26 +1,26 @@
 # AI Career Paths: minimal steps
 
-The shortest route into four AI engineering roles, as plain text and links. Each role is a few big steps, from foundations to specialization. Each step is a short list of skills, and each skill has the one course and one project (sometimes two) worth finishing before you move on.
+The shortest route into four AI engineering roles. Each role has a few steps. Each step contains courses and projects for hands on practice. 
 
-For every option per skill, plus papers and tools, see the interactive map: https://tomyang1993.github.io/ai-career-paths/
+For more sophisticated career path map with more resource, check out: https://tomyang1993.github.io/ai-career-paths/
 
-What changed and when is in [CHANGELOG.md](CHANGELOG.md).
+The role research borrowed inspiratinos from https://github.com/alexeygrigorev/ai-engineering-field-guide.
 
-## How to use this
+Agent Builder and RAG app builder is combined into AI product engineer following recent trend.
 
-- Pick a role and work down its steps. The order is a direction, not a strict dependency chain: skills inside a step can run in parallel.
-- A skill is done when you have finished its project. Skim the course parts you need; you do not have to finish every lecture.
-- Roles share their early steps, so the same skill (and the same links) shows up under several roles. That is on purpose: each role reads on its own, and work you do for one path counts toward the others.
-- Each role ends with a capstone. Shipping it is the real test of the path.
+The AI field is changing everyday. The career path is subject to change.
 
-## The four roles
+## The four roles(super simplified JD, pick one to follow the steps)
 
 - [AI engineer](#ai-engineer): ships LLM systems that take actions and answer from real data: tool-calling agents, retrieval pipelines with citations, and the evals that keep both honest.
 - [Cloud / ML platform engineer](#cloud--ml-platform-engineer): runs the infrastructure that models train and serve on: GPU clusters, model gateways, autoscaling inference, pipelines and cost controls.
 - [DevOps / full-stack engineer](#devops--full-stack-engineer): builds and ships the product around the model: frontends, APIs, pipelines and deploys, increasingly with coding agents in the loop.
 - [ML trainer / researcher](#ml-trainer--researcher): trains, fine-tunes and evaluates models: pretraining runs, post-training with SFT and RL, and the systems work that makes them fast.
 
----
+Now only free resource are included, paid resources might be listed later, but absolutely no affliation.
+Steps have overlappings between these roles naturally, check out https://tomyang1993.github.io/ai-career-paths/ for a big picture.
+Only part of the resources are listed below for simplicity, again check out https://tomyang1993.github.io/ai-career-paths/ for more details if you want to do it throughly.
+Choosing multiple paths at the same time is not recomended, the skillsets required are quite different.
 
 ## AI engineer
 
@@ -372,4 +372,3 @@ Defining stack: PyTorch / TensorFlow, Inference / serving. Interactive path: htt
 
 - Role archetypes start from the job-posting clusters in the [AI Engineering Field Guide](https://github.com/alexeygrigorev/ai-engineering-field-guide). Its agent-builder and RAG-builder clusters are merged here into one AI engineer role, because most postings that ask for one also ask for the other.
 - Courses and projects were checked against their live pages in November 2026. Whether lecture videos are public changes from term to term; each course says what was open then (videos, slides, notes).
-- Every project is free. A few need paid GPU time to run, and say so.
