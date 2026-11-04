@@ -4,6 +4,15 @@ Changes to the steps in [README.md](README.md), newest first. Course and project
 
 Each entry is published as a [GitHub Release](https://github.com/TomYang1993/AI-career-path-minimal-steps/releases) when it lands on `main`: start it with `## YYYY-MM-DD · short title`.
 
+## 2026-11-04 · get hired, harness engineering, essential reads
+
+- Every path now ends with a **Get hired** step after the capstone: interview prep, plus what to publish as a portfolio. The AI engineer step links LevelUp Labs' free AI Engineer interview prep and system design case studies.
+- AI engineer step 5.1 is now **Harnesses & production agents**, with [Learn Claude Code](https://github.com/shareAI-lab/learn-claude-code) (build a coding agent's harness step by step) and Anthropic's guide to long-running harnesses.
+- Essential guides added as `Read:` lines: OWASP Top 10 for LLM Applications, Building effective agents, Effective context engineering for AI agents, and Demystifying evals for AI agents.
+- Agent security: the prompt-injection design patterns paper on step 5.1, and OWASP's list on LLM APIs for both the AI engineer and DevOps paths.
+- New **Do the projects for $0** section: free API tiers, local models and free GPU notebooks.
+- Several of these came from [awesome-generative-ai-guide](https://github.com/aishwaryanr/awesome-generative-ai-guide), [agentic-engineering-handbook](https://github.com/keyuchen21/agentic-engineering-handbook) and [awesome-ai-resources](https://github.com/mohabdelkarim/awesome-ai-resources).
+
 ## 2026-11-03 · capstone follow-alongs and overview
 
 - A table at the top sums up each role: number of steps and skills, a rough total time, and the capstone.

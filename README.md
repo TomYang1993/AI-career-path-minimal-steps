@@ -30,6 +30,14 @@ Steps naturally **overlap** between these roles. Check out https://tomyang1993.g
 - [ML trainer / researcher](#ml-trainer--researcher): trains, fine-tunes and evaluates models: pretraining runs, post-training with SFT and RL, and the systems work that makes them fast.
 
 
+## Do the projects for $0
+
+Most projects call an LLM API, and free tiers cover the coursework (their limits change, so check each). For training and fine-tuning, free notebook GPUs go a long way. The capstones that need bigger GPUs say so, with a rough cost.
+
+- Free API keys: [Google AI Studio](https://aistudio.google.com/) (Gemini), [GroqCloud](https://console.groq.com/) (fast open models), [OpenRouter](https://openrouter.ai/) (one key, some free models).
+- Run models locally: [Ollama](https://ollama.com/), [llama.cpp](https://github.com/ggml-org/llama.cpp) (works even on a laptop CPU).
+- Free GPUs: [Google Colab](https://colab.research.google.com/), [Kaggle Notebooks](https://www.kaggle.com/code) (weekly free quota).
+
 ## AI engineer
 
 Ships LLM systems that take actions and answer from real data: tool-calling agents, retrieval pipelines with citations, and the evals that keep both honest.
@@ -62,6 +70,7 @@ Most postings for this role ask for both agents and retrieval, so the path cover
 - Course: [DeepLearning.AI: ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/) (videos + notebooks). Prompting through the API: summarize, infer, transform, then build a small chatbot.
 - Project: [OpenAI Cookbook](https://github.com/openai/openai-cookbook). Runnable examples for structured outputs, function calling, embeddings and evals.
 - Project: [Claude Cookbooks](https://github.com/anthropics/claude-cookbooks). Notebooks for tool use, RAG, prompt caching, sub-agents and more.
+- Read: [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/) (OWASP). The most common security risks in LLM apps, from prompt injection to excessive agency.
 
 **2.2 ML fundamentals** *(optional)*. Generalization, metrics and data splits: the vocabulary.
 
@@ -84,11 +93,13 @@ Most postings for this role ask for both agents and retrieval, so the path cover
 
 - Course: [CMU 17-645: Machine Learning in Production](https://mlip-cmu.github.io/s2026/) (Spring 2026, slides). Model quality, testing in production and risk, now covering LLMs and agents.
 - Project: [LLM Zoomcamp](https://github.com/DataTalksClub/llm-zoomcamp). Focus: Evaluation and monitoring. Offline retrieval and answer evaluation, then monitoring in production.
+- Read: [Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) (Anthropic). Anthropic's engineering guide to building evals for agents.
 
 **3.4 Memory & context engineering** *(agents)*. Short and long-term memory, context budgets, compaction.
 
 - Course: [DeepLearning.AI: LLMs as Operating Systems: Agent Memory](https://www.deeplearning.ai/short-courses/llms-as-operating-systems-agent-memory/) (videos + notebooks). Taught by the MemGPT authors: build self-editing memory, then share memory across agents with Letta.
 - Project: [5-Day AI Agents Intensive](https://www.kaggle.com/learn-guide/5-day-agents). Focus: Memory day. Sessions, memory and context management for agents.
+- Read: [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) (Anthropic). How to curate what goes into an agent's context window as tasks run longer.
 
 **3.5 AI-native development** *(agents)*. MCP, hooks and working inside coding agents.
 
@@ -106,6 +117,7 @@ Most postings for this role ask for both agents and retrieval, so the path cover
 
 - Course: [CMU 11-768: AI Agents (Neubig & Fried)](https://www.cmu-agents.com/) (Fall 2026, videos). Harness design, evaluation, RL training, sandboxing and OpenHands. Lectures are being posted to YouTube.
 - Project: [Hugging Face Agents Course](https://huggingface.co/learn/agents-course). smolagents, LlamaIndex and LangGraph units, ending in a benchmarked final agent. Free certificate. Time: 20–30 hours.
+- Read: [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) (Anthropic). When a fixed workflow is enough, when you need an agent, and the common patterns for both.
 
 **4.2 Databases & vector stores** *(retrieval)*. ANN indexes, hybrid queries, keeping embeddings fresh.
 
@@ -119,10 +131,13 @@ Most postings for this role ask for both agents and retrieval, so the path cover
 
 ### Step 5 · Specialization
 
-**5.1 Production & self-improving agents** *(agents)*. Sandboxes, guardrails, approvals, RL for agents.
+**5.1 Harnesses & production agents** *(agents)*. Harnesses, sandboxes, guardrails, approvals.
 
 - Course: [Berkeley CS294/194-196: Agentic AI MOOC (Dawn Song)](https://agenticai-learning.org/f25) (Fall 2025, videos). Focus: Safety lecture. Agentic AI safety and security.
+- Project: [Learn Claude Code](https://github.com/shareAI-lab/learn-claude-code). Build a coding agent's harness step by step: the tool loop, planning, subagents, skills, context compaction and permissions.
 - Project: [5-Day AI Agents Intensive](https://www.kaggle.com/learn-guide/5-day-agents). Focus: Day 5. From prototype to production deployment.
+- Read: [Effective harnesses for long-running agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents) (Anthropic). How to keep an agent productive across many context windows.
+- Read: [Design Patterns for Securing LLM Agents against Prompt Injections](https://arxiv.org/abs/2506.08837) (Beurer-Kellner et al., 2025). Six design patterns that limit what a prompt-injected agent can do.
 
 **5.2 Advanced RAG systems** *(retrieval)*. Grounded, cited answers over messy enterprise data.
 
@@ -136,6 +151,12 @@ Most postings for this role ask for both agents and retrieval, so the path cover
 Follow along:
 
 - [Second Brain AI Assistant course](https://github.com/decodingml/second-brain-ai-assistant-course) (Decoding AI, free and open source). Six modules that build an agentic RAG assistant end to end: crawl and clean documents, chunk and embed them into a vector store, put a smolagents agent on top, evaluate it with Opik, and deploy it. Running the code costs about $1–5 in API fees. To finish the capstone, swap in your own corpus and add your ticket and chat tools as MCP servers.
+
+### Step 7 · Get hired
+
+- Prep: [AI Engineer interview prep](https://github.com/aishwaryanr/awesome-generative-ai-guide/tree/main/interview_prep/roles/ai-engineer) (LevelUp Labs, free). What each interview round tests, a 60+ question bank with model answers, and a 3-week prep plan.
+- Prep: [AI system design case studies](https://github.com/aishwaryanr/awesome-generative-ai-guide/tree/main/interview_prep/system-design) (LevelUp Labs, free). Ten worked system design interviews, each with the follow-up questions interviewers ask.
+- Portfolio: publish the capstone with a README that states the problem, the architecture and the eval results, plus a two-minute demo video. AI-first startups weigh a working portfolio heavily.
 
 ---
 
@@ -236,6 +257,13 @@ Follow along:
 
 - [vLLM Production Stack tutorials](https://github.com/vllm-project/production-stack/tree/main/tutorials) (free, open source). Follow them in order: 00 (set up Kubernetes), 01 (Helm install), 02 (basic config), 07 (benchmark on one GPU), then 20 (autoscale with KEDA on queue length, down to zero). That covers the capstone except the cost write-up. The autoscaling step needs a cluster with at least 2 GPUs; GPU time is the only cost.
 
+### Step 7 · Get hired
+
+- Prep: [ML and LLM system design case studies](https://www.evidentlyai.com/ml-system-design) (Evidently, free). How real companies built and run ML and LLM systems.
+- Read: [Site Reliability Engineering](https://sre.google/sre-book/introduction/) (Google, free book). SLOs, on-call and incident response: the operations side that platform and DevOps interviews probe.
+- Read: [Machine Learning Interviews](https://huyenchip.com/ml-interviews-book/) (Chip Huyen, free book). How ML hiring works, what each interview round tests, and practice questions.
+- Portfolio: publish the capstone benchmark as a short write-up: latency, throughput and cost per million tokens, before and after autoscaling.
+
 ---
 
 ## DevOps / full-stack engineer
@@ -273,6 +301,7 @@ Every course, project and paper for this path, on one page: [DevOps / full-stack
 - Course: [DeepLearning.AI: ChatGPT Prompt Engineering for Developers](https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/) (videos + notebooks). Prompting through the API: summarize, infer, transform, then build a small chatbot.
 - Project: [OpenAI Cookbook](https://github.com/openai/openai-cookbook). Runnable examples for structured outputs, function calling, embeddings and evals.
 - Project: [Claude Cookbooks](https://github.com/anthropics/claude-cookbooks). Notebooks for tool use, RAG, prompt caching, sub-agents and more.
+- Read: [OWASP Top 10 for LLM Applications](https://genai.owasp.org/llm-top-10/) (OWASP). The most common security risks in LLM apps, from prompt injection to excessive agency.
 
 **2.2 AI product frontend**. Streaming chat UIs and the glue to model output.
 
@@ -302,6 +331,7 @@ Every course, project and paper for this path, on one page: [DevOps / full-stack
 
 - Course: [CMU 17-645: Machine Learning in Production](https://mlip-cmu.github.io/s2026/) (Spring 2026, slides). Model quality, testing in production and risk, now covering LLMs and agents.
 - Project: [Introduction to LangSmith](https://academy.langchain.com/courses/intro-to-langsmith). Tracing, datasets, experiments and online evaluation. Time: about 3.5 hours.
+- Read: [Demystifying evals for AI agents](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) (Anthropic). Anthropic's engineering guide to building evals for agents.
 
 ### Step 4 · Applied
 
@@ -324,6 +354,12 @@ Follow along:
 - [AI Dev Tools Zoomcamp](https://github.com/DataTalksClub/ai-dev-tools-zoomcamp) (DataTalks.Club, free). Modules 2–4 build one full-stack app and take it through tests, Docker, a public deploy, GitHub Actions CI/CD and observability. The [final project](https://github.com/DataTalksClub/ai-dev-tools-zoomcamp/tree/main/project) asks for CI/CD with a rollback path. The 2026 materials are still being finalized.
 - [AI SDK RAG template](https://github.com/vercel-labs/ai-sdk-preview-rag) (Vercel, free). A Next.js chat app that streams model responses and retrieves from Postgres through tool calls. Use it as the AI feature; deployed on Vercel, every pull request gets a preview deploy.
 - [promptfoo GitHub Action](https://github.com/promptfoo/promptfoo-action) (free, open source). Runs your eval suite on every pull request and fails the check below a pass rate (`fail-on-threshold`). Make that check required and evals become the merge gate. Model API calls are the only cost.
+
+### Step 6 · Get hired
+
+- Prep: [System Design Primer](https://github.com/donnemartin/system-design-primer) (free). The standard prep for system design rounds: scaling, caching, queues and trade-offs, with practice questions.
+- Read: [Site Reliability Engineering](https://sre.google/sre-book/introduction/) (Google, free book). SLOs, on-call and incident response: the operations side that platform and DevOps interviews probe.
+- Portfolio: keep the capstone live at a public URL with its pipeline visible: the eval gate on pull requests, preview deploys and a tested rollback.
 
 ---
 
@@ -408,6 +444,12 @@ Follow along:
 
 - [nanochat](https://github.com/karpathy/nanochat) (Karpathy, free, open source). `runs/speedrun.sh` trains a tokenizer, pretrains a small model, fine-tunes it into a chat model and evaluates each stage; `scripts/chat_rl.py` adds RL on GSM8K math. About 2 hours on one 8×H100 node (around $50, closer to $15 on spot instances). `runs/runcpu.sh` runs a much smaller version on a laptop for free, with weak results.
 - [Reasoning from Scratch](https://github.com/rasbt/reasoning-from-scratch) (Sebastian Raschka, code free; the book is paid). Chapters 6–7 train a small model with GRPO reinforcement learning on consumer hardware: a free way to do the RL half.
+
+### Step 7 · Get hired
+
+- Read: [Machine Learning Interviews](https://huyenchip.com/ml-interviews-book/) (Chip Huyen, free book). How ML hiring works, what each interview round tests, and practice questions.
+- Course: [Harvard CS197: AI Research Experiences](https://www.cs197.seas.harvard.edu/) (free course notes). Reading papers, running experiments and writing them up: the habits a research portfolio shows.
+- Portfolio: write the capstone up like a short paper (setup, scaling curves, ablations) and release the code and weights on Hugging Face.
 
 ---
 
