@@ -56,6 +56,7 @@ Most postings for this role ask for both agents and retrieval, so the path cover
 
 - Course: [Harvard CS50P: Introduction to Programming with Python](https://cs50.harvard.edu/python/) (videos). Fast on-ramp if Python is not yet your daily language.
 - Course: [MIT: The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) (videos). Shell, Git, debugging and profiling: the tooling every later course assumes.
+- Video: [Python asyncio tutorial](https://www.youtube.com/watch?v=Qb9s3UiMSTA) (YouTube). Async from the ground up: what asyncio is, when to use it, the event loop and coroutines.
 - Project: [Build Your Own X](https://github.com/codecrafters-io/build-your-own-x). Rebuild a tool you use every day (Git, Redis, an HTTP server, a shell) from scratch. Pick the Python tutorials. Time: a weekend per tool.
 
 **1.2 Backend & data fundamentals**. HTTP APIs, SQL, auth, queues and caching.
@@ -176,6 +177,7 @@ Every course, project and paper for this path, on one page: [Cloud / ML platform
 
 - Course: [Harvard CS50P: Introduction to Programming with Python](https://cs50.harvard.edu/python/) (videos). Fast on-ramp if Python is not yet your daily language.
 - Course: [MIT: The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) (videos). Shell, Git, debugging and profiling: the tooling every later course assumes.
+- Video: [Python asyncio tutorial](https://www.youtube.com/watch?v=Qb9s3UiMSTA) (YouTube). Async from the ground up: what asyncio is, when to use it, the event loop and coroutines.
 - Project: [Build Your Own X](https://github.com/codecrafters-io/build-your-own-x). Rebuild a tool you use every day (Git, Redis, an HTTP server, a shell) from scratch. Pick the Python tutorials. Time: a weekend per tool.
 
 **1.2 Computer systems & Linux**. Processes, networking and the Linux box under it all.
@@ -282,6 +284,7 @@ Every course, project and paper for this path, on one page: [DevOps / full-stack
 
 - Course: [Harvard CS50P: Introduction to Programming with Python](https://cs50.harvard.edu/python/) (videos). Fast on-ramp if Python is not yet your daily language.
 - Course: [MIT: The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) (videos). Shell, Git, debugging and profiling: the tooling every later course assumes.
+- Video: [Python asyncio tutorial](https://www.youtube.com/watch?v=Qb9s3UiMSTA) (YouTube). Async from the ground up: what asyncio is, when to use it, the event loop and coroutines.
 - Project: [Build Your Own X](https://github.com/codecrafters-io/build-your-own-x). Rebuild a tool you use every day (Git, Redis, an HTTP server, a shell) from scratch. Pick the Python tutorials. Time: a weekend per tool.
 
 **1.2 Backend & data fundamentals**. HTTP APIs, SQL, auth, queues and caching.
@@ -379,6 +382,7 @@ Every course, project and paper for this path, on one page: [ML trainer / resear
 
 - Course: [Harvard CS50P: Introduction to Programming with Python](https://cs50.harvard.edu/python/) (videos). Fast on-ramp if Python is not yet your daily language.
 - Course: [MIT: The Missing Semester of Your CS Education](https://missing.csail.mit.edu/) (videos). Shell, Git, debugging and profiling: the tooling every later course assumes.
+- Video: [Python asyncio tutorial](https://www.youtube.com/watch?v=Qb9s3UiMSTA) (YouTube). Async from the ground up: what asyncio is, when to use it, the event loop and coroutines.
 - Project: [Build Your Own X](https://github.com/codecrafters-io/build-your-own-x). Rebuild a tool you use every day (Git, Redis, an HTTP server, a shell) from scratch. Pick the Python tutorials. Time: a weekend per tool.
 
 **1.2 Math for ML**. Linear algebra, probability, calculus, optimization.
