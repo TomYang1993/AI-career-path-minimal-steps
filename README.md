@@ -193,7 +193,7 @@ Every course, project and paper for this path, on one page: [Cloud / ML platform
 
 **2.1 ML fundamentals**. Generalization, metrics and data splits: the vocabulary.
 
-- Course: [Stanford CS229: Machine Learning](https://cs229.stanford.edu/) (videos). The classic, math-forward treatment. The depth platform and research paths need.
+- Course: [Stanford CS229: Machine Learning (Spring 2026 lectures)](https://www.youtube.com/watch?v=DATnpGoGhM8&list=PLaqpC4kq8Gpw) (17 free videos). Some lecture numbers are missing from the public playlist, and the current class site's documents require Stanford access.
 - Project: [Machine Learning Zoomcamp](https://github.com/DataTalksClub/machine-learning-zoomcamp). From regression to deploying models with Docker, serverless and Kubernetes, plus peer-reviewed projects.
 
 **2.2 Containers & CI/CD**. Docker, CI pipelines with test gates, IaC.
@@ -391,7 +391,7 @@ Every course, project and paper for this path, on one page: [ML trainer / resear
 
 **2.1 ML fundamentals**. Generalization, metrics and data splits: the vocabulary.
 
-- Course: [Stanford CS229: Machine Learning](https://cs229.stanford.edu/) (videos). The classic, math-forward treatment. The depth platform and research paths need.
+- Course: [Stanford CS229: Machine Learning (Spring 2026 lectures)](https://www.youtube.com/watch?v=DATnpGoGhM8&list=PLaqpC4kq8Gpw) (17 free videos). Some lecture numbers are missing from the public playlist, and the current class site's documents require Stanford access.
 - Project: [Practical Deep Learning for Coders](https://course.fast.ai/). Focus: Early lessons. Practical training, validation and error analysis.
 
 ### Step 3 · Building blocks
